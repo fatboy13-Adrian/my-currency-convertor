@@ -1,7 +1,7 @@
 import React from "react";  //Import React library to use JSX and React components
 
 //Select currency component that renders a dropdown for selecting currencies
-const SelectCurrency = ({ currencies, selectedCurrency, onChange }) => 
+const SelectCurrency = ({currencies, selectedCurrency, onChange}) => 
 {
   return (
     //Dropdown to select the currency, with value bound to selected currency and onChange handler

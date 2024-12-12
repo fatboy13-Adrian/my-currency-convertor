@@ -59,7 +59,7 @@ const ConvertorForm = ({currencies, onConvert, onReset}) =>
 
       {/*Conversion and Reset Buttons*/}
       <button onClick = {handleConvert}>Convert</button> {/*Convert Button*/}
-      <button onClick = {handleReset}>Reset</button>      {/*Reset Button*/}
+      <button onClick = {handleReset}>Reset</button>     {/*Reset Button*/}
 
       {/*Display the selected currencies*/}
       <div className = "currency-display">

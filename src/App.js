@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";                       //Import React and hooks
-import ConvertorForm from "./ConvertorForm";                            //Import ConvertorForm component
-import DisplayResult from "./DisplayResult";                            //Import DisplayResult component
-import { fetchCurrencyList, fetchConversionRate } from "./CurrencyAPI"; //Import API functions
-import './App.css';
+import React, {useState, useEffect} from "react";                     //Import react and hooks from react library
+import ConvertorForm from "./ConvertorForm";                          //Import convertor form component
+import DisplayResult from "./DisplayResult";                          //Import display result component
+import {fetchCurrencyList, fetchConversionRate} from "./CurrencyAPI"; //Import API functions
+import './App.css';                                                   //Import CSS file
 
 //App component to manage currencies, conversion, and reset state
 const App = () => 

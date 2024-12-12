@@ -1,4 +1,4 @@
-import React from "react";  //Import React
+import React from "react";  //Import react library
 
 //Display result component to show the exchange rate and converted amount
 const DisplayResult = ({result, rate, fromCurrency, toCurrency}) => 
