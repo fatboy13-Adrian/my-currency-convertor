@@ -1,0 +1,209 @@
+/*Base styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Set basic layout properties for the body*/
+body 
+{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /*Horizontally center the content*/
+  align-items: center;     /*Vertically center the content*/
+  min-height: 100vh;       /*Make sure the body takes full height of the viewport*/
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/*Main app container*/
+.App 
+{
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /*Maximum width for larger screens*/
+  margin: auto; /*Ensures that the content is centered horizontally*/
+}
+
+/*Form elements styling*/
+.convertor-form 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currency-selection 
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.currency-select 
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.currency-select label 
+{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.currency-select select 
+{
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px; /* Limit the width of the dropdown */
+  margin: 5px 0;
+}
+
+.amount-input 
+{
+  margin-bottom: 20px;
+}
+
+.amount-input label 
+{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.amount-input input 
+{
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px; /* Limit the width of the input */
+}
+
+button 
+{
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 250px; /* Limit the width of the buttons */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover 
+{
+  background-color: #45a049;
+}
+
+.currency-display 
+{
+  margin-top: 20px;
+}
+
+.currency-display h3 
+{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Media queries for responsiveness*/
+
+/*Mobile devices*/
+@media (max-width: 480px) 
+{
+  .App 
+  {
+    padding: 15px;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .convertor-form 
+  {
+    width: 100%;
+  }
+
+  .currency-selection 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .currency-select,
+  .amount-input 
+  {
+    width: 100%;
+  }
+
+  button 
+  {
+    width: 100%;
+  }
+}
+
+/*Tablets and larger screens*/
+@media (min-width: 481px) and (max-width: 768px) 
+{
+  .App 
+  {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .currency-selection 
+  {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .currency-select,
+  .amount-input 
+  {
+    width: 45%;
+  }
+
+  button 
+  {
+    width: 45%;
+  }
+}
+
+/*Desktop screens and larger*/
+@media (min-width: 769px) 
+{
+  .App 
+  {
+    max-width: 600px;
+  }
+
+  .currency-selection 
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .currency-select,
+  .amount-input 
+  {
+    width: 45%;
+  }
+
+  button 
+  {
+    width: 45%;
+  }
+}
